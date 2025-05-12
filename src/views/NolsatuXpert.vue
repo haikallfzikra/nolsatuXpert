@@ -1,12 +1,22 @@
 <script setup>
-import HeroArea from '@/components/Hero/HeroArea.vue'
-import TeamMemberArea from '@/components/Team-member/TeamMemberArea.vue'
-import ServiceArea from '@/components/Service/ServiceArea.vue'
-import TechCategorieArea from '@/components/Tech-categories/TechCategorieArea.vue'
-import TeamDetailArea from '@/components/Team-detail/TeamDetailArea.vue'
-import ProjectArea from '@/components/ProjectArea/ProjectArea.vue'
-import ContactArea from '@/components/Contact/ContactArea.vue'
-import TestimonialArea from '@/components/Testimonial/TestimonialArea.vue'
+import { defineAsyncComponent } from 'vue'
+
+const HeroArea = defineAsyncComponent(() => import('@/components/Hero/HeroArea.vue'))
+const TeamMemberArea = defineAsyncComponent(
+  () => import('@/components/Team-member/TeamMemberArea.vue'),
+)
+const ServiceArea = defineAsyncComponent(() => import('@/components/Service/ServiceArea.vue'))
+const TechCategorieArea = defineAsyncComponent(
+  () => import('@/components/Tech-categories/TechCategorieArea.vue'),
+)
+const TeamDetailArea = defineAsyncComponent(
+  () => import('@/components/Team-detail/TeamDetailArea.vue'),
+)
+const ProjectArea = defineAsyncComponent(() => import('@/components/ProjectArea/ProjectArea.vue'))
+const ContactArea = defineAsyncComponent(() => import('@/components/Contact/ContactArea.vue'))
+const TestimonialArea = defineAsyncComponent(
+  () => import('@/components/Testimonial/TestimonialArea.vue'),
+)
 </script>
 
 <template>
@@ -34,5 +44,3 @@ import TestimonialArea from '@/components/Testimonial/TestimonialArea.vue'
   <!-- Contact Section -->
   <ContactArea />
 </template>
-
-<style></style>

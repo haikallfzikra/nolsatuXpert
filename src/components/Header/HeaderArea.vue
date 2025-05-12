@@ -6,8 +6,10 @@ const mobileMenuOpen = ref(false)
 
 const navItems = [
   { name: 'Home', link: '#' },
-  { name: 'About', link: '#' },
   { name: 'Services', link: '#' },
+  { name: 'Team', link: '#' },
+  { name: 'Projects', link: '#' },
+  { name: 'Testimonials', link: '#' },
   { name: 'Contact', link: '#' },
 ]
 
@@ -33,7 +35,7 @@ onUnmounted(() => {
     class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
     :class="{
       'bg-white shadow-md': scrolled,
-      'bg-transparent': !scrolled
+      'bg-transparent': !scrolled,
     }"
   >
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -56,7 +58,7 @@ onUnmounted(() => {
           class="nav-link text-sm font-medium cursor-pointer whitespace-nowrap"
           :class="{
             'text-gray-800 hover:text-primary': scrolled,
-            'text-white hover:text-gray-200': !scrolled
+            'bg-primary py-2 rounded-full text-white hover:text-gray-200': !scrolled,
           }"
         >
           {{ item.name }}
@@ -78,10 +80,7 @@ onUnmounted(() => {
     </div>
 
     <!-- Mobile Menu -->
-    <div
-      v-if="mobileMenuOpen"
-      class="md:hidden bg-white shadow-lg absolute w-full"
-    >
+    <div v-if="mobileMenuOpen" class="md:hidden bg-white shadow-lg absolute w-full">
       <div class="container mx-auto px-6 py-4">
         <div class="flex flex-col space-y-4">
           <a
