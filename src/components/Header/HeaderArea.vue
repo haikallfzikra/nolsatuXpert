@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import logo from '@/assets/img/logo2.png'
 
 const scrolled = ref(false)
 const mobileMenuOpen = ref(false)
@@ -41,12 +42,13 @@ onUnmounted(() => {
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <!-- Logo -->
       <div class="logo flex items-center">
-        <h1
+        <img :src="logo" alt="" class="w-[200px] mr-2" />
+        <!-- <h1
           class="text-2xl font-bold"
           :class="{ 'text-blue-500': scrolled, 'text-white': !scrolled }"
         >
           <span class="font-extrabold">nolsatu</span>Xpert
-        </h1>
+        </h1> -->
       </div>
 
       <!-- Navigation (Desktop) -->
