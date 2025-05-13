@@ -77,7 +77,8 @@ const testimonials = ref([
           <div class="bg-white rounded-lg shadow-md p-8 my-4">
             <div class="flex items-center mb-6">
               <div class="text-yellow-400 flex">
-                <i class="fas fa-star" v-for="n in 5" :key="n"></i>
+                <!-- <i class="fas fa-star" v-for="n in 5" :key="n"></i> -->
+                <FontAwesomeIcon :icon="['fas', 'star']" v-for="n in 5" :key="n" />
               </div>
             </div>
             <p class="text-gray-700 mb-6 italic">"{{ testimonial.quote }}"</p>
