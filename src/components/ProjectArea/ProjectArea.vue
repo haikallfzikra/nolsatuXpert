@@ -86,9 +86,9 @@ const projects = ref([
                 >{{ tech }}</span
               >
             </div>
-            <a href="#" class="text-primary font-medium hover:text-primary-dark cursor-pointer"
-              >View Project <i class="fas fa-arrow-right ml-1"></i
-            ></a>
+            <a href="#" class="text-blue-500 font-medium hover:text-primary-dark cursor-pointer"
+              >View Project <FontAwesomeIcon icon="fas fa-arrow-right" class="ml-1"
+            /></a>
           </div>
         </div>
       </div>

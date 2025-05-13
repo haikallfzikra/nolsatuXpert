@@ -83,7 +83,7 @@ const teamMembers = ref([
               class="w-full h-full object-cover object-top"
             />
             <div
-              class="absolute inset-0 bg-primary bg-opacity-80 flex items-center justify-center p-6 opacity-0 hover:opacity-100 transition-opacity duration-300"
+              class="absolute inset-0 bg-blue-500 bg-opacity-80 flex items-center justify-center p-6 opacity-0 hover:opacity-100 transition-opacity duration-300"
             >
               <p class="text-white text-center">{{ member.description }}</p>
             </div>

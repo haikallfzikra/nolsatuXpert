@@ -22,10 +22,10 @@
           digital experiences. Our expertise spans across web, mobile, and IoT solutions.
         </p>
         <button
-          class="bg-primary text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
+          class="bg-blue-500 text-center text-white px-8 py-3 rounded text-lg font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
         >
           Hire Our Team
-          <i class="fas fa-arrow-right ml-2"></i>
+          <FontAwesomeIcon icon="fas fa-arrow-right" class="ml-2" />
         </button>
       </div>
     </div>

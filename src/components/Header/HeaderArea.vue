@@ -43,7 +43,7 @@ onUnmounted(() => {
       <div class="logo flex items-center">
         <h1
           class="text-2xl font-bold"
-          :class="{ 'text-primary': scrolled, 'text-white': !scrolled }"
+          :class="{ 'text-blue-500': scrolled, 'text-white': !scrolled }"
         >
           <span class="font-extrabold">nolsatu</span>Xpert
         </h1>
@@ -57,14 +57,14 @@ onUnmounted(() => {
           :href="item.link"
           class="nav-link text-sm font-medium cursor-pointer whitespace-nowrap"
           :class="{
-            'text-gray-800 hover:text-primary': scrolled,
+            'text-gray-800 hover:text-blue-500': scrolled,
             'bg-primary py-2 rounded-full text-white hover:text-gray-200': !scrolled,
           }"
         >
           {{ item.name }}
         </a>
         <button
-          class="bg-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
+          class="bg-blue-500 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-primary-dark transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
         >
           Hire Our Team
         </button>

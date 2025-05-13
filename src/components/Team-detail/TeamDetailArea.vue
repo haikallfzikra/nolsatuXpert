@@ -122,10 +122,10 @@ const teamDetails = ref([
         <div
           v-for="(member, index) in teamDetails"
           :key="index"
-          class="bg-white rounded-lg shadow-md overflow-hidden"
+          class="bg-white rounded-lg shadow-md overflow-hidden min-h-[300px]"
         >
-          <div class="flex flex-col md:flex-row">
-            <div class="md:w-1/3 bg-primary p-6 flex items-center justify-center">
+          <div class="flex flex-col md:flex-row h-full items-stretch">
+            <div class="md:w-1/3 bg-blue-500 p-6 flex items-center justify-center">
               <img
                 :src="member.image"
                 alt="Team member"

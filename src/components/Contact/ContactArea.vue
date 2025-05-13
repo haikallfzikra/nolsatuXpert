@@ -39,8 +39,8 @@ onMounted(() => {
           </p>
           <div class="mb-8">
             <div class="flex items-center mb-4">
-              <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
-                <i class="fas fa-envelope text-white"></i>
+              <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                <FontAwesomeIcon icon="fa-solid fa-user" class="text-white" />
               </div>
               <div>
                 <h4 class="font-bold">Email</h4>
@@ -48,8 +48,8 @@ onMounted(() => {
               </div>
             </div>
             <div class="flex items-center mb-4">
-              <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
-                <i class="fas fa-phone text-white"></i>
+              <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                <FontAwesomeIcon icon="fa-solid fa-phone" class="text-white" />
               </div>
               <div>
                 <h4 class="font-bold">Phone</h4>
@@ -57,8 +57,8 @@ onMounted(() => {
               </div>
             </div>
             <div class="flex items-center">
-              <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center mr-4">
-                <i class="fas fa-map-marker-alt text-white"></i>
+              <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center mr-4">
+                <FontAwesomeIcon icon="fa-solid fa-map-marker-alt" class="text-white" />
               </div>
               <div>
                 <h4 class="font-bold">Location</h4>
@@ -71,25 +71,25 @@ onMounted(() => {
               href="#"
               class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors duration-300 cursor-pointer"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <FontAwesomeIcon icon="fa-brands fa-linkedin" />
             </a>
             <a
               href="#"
               class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors duration-300 cursor-pointer"
             >
-              <i class="fab fa-github"></i>
+              <FontAwesomeIcon icon="fa-brands fa-github" />
             </a>
             <a
               href="#"
               class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors duration-300 cursor-pointer"
             >
-              <i class="fab fa-twitter"></i>
+              <FontAwesomeIcon icon="fa-brands fa-twitter" />
             </a>
             <a
               href="#"
               class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-primary transition-colors duration-300 cursor-pointer"
             >
-              <i class="fab fa-instagram"></i>
+              <FontAwesomeIcon icon="fa-brands fa-instagram" />
             </a>
           </div>
         </div>

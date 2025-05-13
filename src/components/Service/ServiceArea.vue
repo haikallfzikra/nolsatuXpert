@@ -56,10 +56,10 @@ const services = ref([
         <div
           v-for="(service, index) in services"
           :key="index"
-          class="service-card bg-white rounded-lg shadow-md p-8 transition-all duration-300 hover:shadow-xl"
+          class="service-card h-full items-stretch bg-white rounded-lg shadow-md p-8 transition-all duration-300 hover:shadow-xl"
         >
-          <div class="text-primary text-4xl mb-6">
-            <i :class="service.icon"></i>
+          <div class="text-blue-500 text-4xl mb-6">
+            <FontAwesomeIcon :icon="service.icon" />
           </div>
           <h3 class="text-xl font-bold mb-4">{{ service.title }}</h3>
           <p class="text-gray-600 mb-6">{{ service.description }}</p>
