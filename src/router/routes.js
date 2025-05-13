@@ -1,6 +1,4 @@
 import Layout from '../layouts/MainLayout.vue'
-import Index from '@/views/NolsatuXpert.vue'
-
 
 const routes = [
   {
@@ -9,7 +7,7 @@ const routes = [
     name: 'app',
     children: [
       {
-        component: Index,
+        component: () => import('@/views/NolsatuXpert.vue'),
         path: '/',
         name: 'index',
       },
